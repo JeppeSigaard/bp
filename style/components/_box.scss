@@ -1,0 +1,67 @@
+.box-main{
+    @extend %font-size-remove;
+    overflow:hidden;
+    padding:0px $page-margin/2;
+    
+    @media only screen and(max-width:480px){
+        padding:0;
+    }
+    
+}
+
+.box-full,
+.box-half,
+.box-third,
+.box-two-third{
+    @extend %font-style;
+    background: transparent;
+    position: relative;
+    vertical-align: top;
+    padding: 25px $page-margin/2 40px;
+    box-sizing: border-box;
+    float:left;
+    
+    &:after{
+        content:'';
+        display: block;
+        border-bottom: 1px solid #543737;
+        bottom:0px;
+        right:$page-margin/2;
+        left:$page-margin/2;
+        position: absolute;
+    }
+}
+
+.box-full {
+	width: 100%;
+}
+
+.box-half {
+	width: 50%;
+    @media only screen and(max-width:768px){
+        width:100%;
+    }
+}
+
+.box-third {
+	width: 33.33333%;
+    @media only screen and(max-width:960px){
+        width:50%;
+    }
+    @media only screen and(max-width:640px){
+        width:100%;
+    }
+    
+    img {
+ 	    width: 100%;
+	    height: auto;
+    }
+}
+
+.box-two-third {
+	width: 66.66666%;
+    @media only screen and(max-width:960px){
+        width:100%;
+    }
+    
+}

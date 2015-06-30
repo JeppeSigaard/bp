@@ -1,0 +1,128 @@
+#header {
+	background: transparent;
+	width: 100%;
+	overflow: auto;
+	position: relative;
+    
+    .header-img{
+        background:url(../statics/bg-body-2.png) no-repeat center;
+        box-shadow: 0px 0px $page-margin rgba(black,.3);
+        background-size:cover;
+        padding-bottom: 20%;
+        margin:0px $page-margin;
+        
+        @media only screen and(max-width:480px){
+            display: none;
+        }
+    }
+    
+    .logo{ 
+        display: inline-block;
+        float: left;
+        
+        
+        @media only screen and(max-width:768px){
+            display: block;
+            text-align: center;
+            float: none;
+        }
+    
+    img{
+        background: transparent;
+        width: 274px;
+        position: relative;
+        margin-top:-30px;
+        
+        @media only screen and(max-width:480px){
+            margin-top:20px;
+            width: 240px;
+        }
+        
+    }
+    
+    }
+}
+
+
+
+#topnav {
+	background: transparent;
+	position: relative;
+	color: #fff;
+	float: right;
+    margin:30px $page-margin $page-margin;
+    display: block;
+    top:0;
+    
+    @media only screen and(max-width:768px){
+        float:none;
+        text-align: center;
+        margin:20px;
+    }
+    
+    @media only screen and(max-width:480px){
+        margin:10px;
+    }
+    
+    
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: normal;
+        padding: 2px 7px;
+        display: inline-block;
+        background: $base-color;
+        font-size: 12px;
+        transition:all .1s;
+        
+        @media only screen and(max-width:540px){
+            display: block;
+            padding: 8px 0px;
+            margin-bottom: 1px;
+        }
+        
+    }
+    
+    ul {
+        list-style-type: none;
+        
+        li {
+            
+            display: inline;
+            
+            &:hover a,
+            &.current-menu-item a,
+            &.current_page_item a{
+                background: $base-contrast-color;
+                color: #fff;
+            }
+        }
+        
+        @media only screen and(max-width:540px){
+            height:0;
+            overflow:hidden;
+            transition:height .2s;
+        }
+    }
+    
+    &.toggle { 
+        
+        ul{
+            height:auto;
+        }
+        
+        a.top-nav-toggle{
+            background:lighten($base-contrast-color,10);
+        }
+    }
+    a.top-nav-toggle{
+        display: none;
+        
+        @media only screen and(max-width:540px){
+            display: block;
+            text-transform: uppercase;
+            
+        }
+    }
+}

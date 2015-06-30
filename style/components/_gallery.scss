@@ -1,0 +1,39 @@
+.gallery {
+	background-color: transparent;
+	width: 100%;
+
+    a {
+        color: #fff;
+    }
+
+    ul { 
+        list-style: none;
+        margin-top: 25px;
+        
+        li { 
+            display: inline; 
+        }
+        
+        img {
+            border: 5px solid $gallery-border-color;
+            border-width: 11px 11px 33px;
+            max-width: 100%;
+            transition:border 200ms;
+        }
+        
+        .thumb-large img{
+            width:100%;
+        }
+        
+        a:hover img {
+            border: 5px solid $gallery-contrast-border-color;
+            border-width: 11px 11px 33px;
+            color: #fff;
+        }
+        
+        a:hover { 
+            color: transparent; 
+        }
+    }
+
+}

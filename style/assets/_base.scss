@@ -1,0 +1,66 @@
+body{
+	background: $body-bg-color;
+    @extend %font-style;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	text-align: left;
+	color: $base-color;
+    box-sizing: border-box;
+    
+    & * {
+        box-sizing:inherit;
+    }
+}	
+
+
+p { 
+    background: transparent;
+	position: relative;
+	padding: 10px 0 15px 0;
+	text-align: left;
+}
+
+
+.full-img img{
+    width:100%;
+}
+img {
+	border: none;
+    max-width:100%;
+    
+    &.full{
+        width:100%;
+    }
+}
+
+h1,h2,h3{
+    position: relative; 
+    font-weight: normal; 
+    color: $base-color; 
+}
+
+h1 {
+    font-size: 18px; 
+    line-height: 24px; 
+}
+
+h2, h1.post-title {
+    font-size: 34px; 
+    margin-top: 5px; 
+}
+
+h3 {
+    font-size: 16px; 
+    font-weight: bold; 
+}
+ 
+
+a {
+	color: $base-contrast-color;
+	text-decoration: none;
+	font-weight: bold;
+    
+    &:hover {
+	    color: $base-color;
+    }
+}

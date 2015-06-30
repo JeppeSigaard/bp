@@ -1,0 +1,111 @@
+#slidecontainer {
+	background: transparent;
+	position: relative;
+	margin-top: 35px;
+    padding: 25px 10px 40px;
+    clear: both;
+    
+    .flickity-viewport{
+        height:0;
+        padding-bottom:35%;
+    }
+    
+    .slide{
+        position:relative;
+    }
+    
+    div,img{
+        width:100%;
+    }
+
+    
+    &:after{
+        content:'';
+        display: block;
+        border-bottom: 1px solid #543737;
+        bottom:0px;
+        right:10px;
+        left:10px;
+        position: absolute;
+    }
+    
+    a {
+	    color: $base-color;
+	    text-decoration: none;
+        
+        &:hover {
+	        color: #000;
+	        text-decoration: none;
+        }
+    }
+    
+    .caption {
+        background: transparent;
+        width: 400px;
+        position:absolute;
+        left:0px;
+        top: 0px;
+        padding: 20px 0px 0px 25px;
+        color:$base-color;
+        text-align: left;
+        z-index:500;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+
+        a {	
+            color:$base-color;
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: 34px;
+            line-height: 38px;
+            margin-bottom: 15px;
+        }
+    }
+    
+    
+    .flickity-page-dots{
+        width:auto;
+        bottom:auto;
+        
+        .dot {
+            margin:0px 5px;
+            background:$base-color;
+            opacity:1;
+            
+            &.is-selected{
+                background:$base-contrast-color;
+            }
+        }
+    }
+    
+}
+
+
+.slidenav{
+    
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    right: 0;
+    
+    a {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background:url(../statics/arrow-next.png) no-repeat center;
+        position: absolute;
+        left: -22px;
+        
+        &.next{
+            left:auto;
+            right:-22px;
+            background:url(../statics/arrow-prev.png) no-repeat center;
+        }
+    }
+}
+
+
