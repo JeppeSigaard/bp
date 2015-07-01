@@ -1,4 +1,3 @@
-<?php get_header();?>
 <?php while(have_posts()): the_post(); ?>		
 <article <?php post_class(); ?>>
 <?php get_template_part('components/post','title'); ?>
@@ -13,5 +12,3 @@
 <?php the_content(); ?>
 <?php endwhile; ?>
 </article>
-
-<?php get_footer(); ?>
