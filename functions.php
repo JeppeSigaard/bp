@@ -18,4 +18,7 @@ require 'functions/images.php';
 /* */
 require 'functions/meta-box/index.php'; 
 
+/* */
+require 'functions/costumizer.php'; 
+
 ?>

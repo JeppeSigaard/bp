@@ -1,16 +1,17 @@
+<?php $options = get_option('smamo_theme_options');?>
             </main>
             <footer>
                <div class="box-full">				
                     <p></p>
                     <center>
-                        <img alt="www.bpbiotransport.dk" src="<?php echo get_template_directory_uri();  ?>/statics/logo-bp-biotransport.png" width="137" height="43">
+                        <img alt="www.bpbiotransport.dk" src="<?php echo $options['logo_upload'] ?>" width="137" height="43">
                         <br>
                             <b>Telefon:</b> 
-                            75 39 83 18 / 40 30 96 18
+                            <?php echo $options['telefonnummer'] ?>
                         <br>
                             <b>Mail:</b>
-                            <a title="Send mail til BP Biotransport" href="mailto:kontakt@bpbiotransport.dk">
-                                kontakt@bpbiotransport.dk
+                            <a title="Send mail til BP Biotransport" href="mailto:<?php echo $options['email'] ?>">
+                                <?php echo $options['email'] ?>
                             </a>
                         <p></p>
                     </center>

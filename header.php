@@ -1,3 +1,4 @@
+<?php $options = get_option('smamo_theme_options'); ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
     <head>
@@ -17,8 +18,8 @@
 
 	<!-- BEGIN: header -->
 			<div id="header"> 
-                <div class="header-img"></div>
-				<a class="logo" href="<?php bloginfo('url') ?>"><img alt="BP Biotransport" src="<?php echo get_template_directory_uri();  ?>/statics/logo-bp-biotransport.png"></a>
+                <div class="header-img" style="background-image:url(<?php echo $options['header_image_upload'] ?>);"></div>
+				<a class="logo" href="<?php bloginfo('url') ?>"><img alt="BP Biotransport" src="<?php echo $options['logo_upload'] ?>"></a>
 				
 				<?php get_template_part('components/top','menu'); ?>
 			</div> <!-- END: header -->
