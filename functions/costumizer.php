@@ -39,7 +39,7 @@ function smamo_customize_register($wp_customize){
     
     
     
-    $wp_customize->add_section('smamo_ct_info', array(
+    $wp_customize->add_section('$smamo_ct_info', array(
         'title'    => __('Kontaktinformation', 'smamo'),
         'description' => '',
         'priority' => 120,
