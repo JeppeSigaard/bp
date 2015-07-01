@@ -1,3 +1,7 @@
 footer{
     @extend .box-main;
+    
+    &:after{
+        border-bottom: none;
+    }
 }

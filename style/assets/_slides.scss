@@ -41,7 +41,8 @@
     
     .caption {
         background: transparent;
-        width: 400px;
+        width: 75%;
+        max-width: 400px;
         position:absolute;
         left:0px;
         top: 0px;
@@ -52,16 +53,40 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: normal;
+        
+        @media only screen and(max-width:540px){
+                font-size: 14px;
+                line-height: 16px;
+            }
+            
+            @media only screen and(max-width:480px){
+                font-size: 10px;
+                line-height: 12px;
+                width: 80%;
+            }
 
         a {	
             color:$base-color;
             font-weight: normal;
         }
 
-        h1 {
+        h3,h1 {
             font-size: 34px;
             line-height: 38px;
             margin-bottom: 15px;
+            
+            @media only screen and(max-width:540px){
+                font-size: 28px;
+                line-height: 28px;
+                margin-bottom:10px;
+            }
+            
+            @media only screen and(max-width:480px){
+                font-size: 18px;
+                line-height: 18px;
+                margin-bottom:5px;
+            }
+            
         }
     }
     
@@ -91,6 +116,10 @@
     transform: translate(0,-50%);
     left: 0;
     right: 0;
+    
+    @media only screen and(max-width:480px){
+        display: none;
+    }
     
     a {
         display: block;
