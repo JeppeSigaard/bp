@@ -5,6 +5,10 @@
     padding: 25px 10px 40px;
     clear: both;
     
+    @media(max-width:960px){
+        margin-top: 0;
+    }
+    
     .flickity-viewport{
         height:0;
         padding-bottom:35%;
