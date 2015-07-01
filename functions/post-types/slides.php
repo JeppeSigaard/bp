@@ -5,14 +5,14 @@ function smamo_add_slides() {
 	register_post_type( 'slide', array(
 		
         'menu_icon' 		 => 'dashicons-images-alt2',
-		'public'             => true,
-		'publicly_queryable' => true,
+		'public'             => false,
+		'publicly_queryable' => false,
 		'show_ui'            => true,
 		'show_in_menu'       => true,
-		'query_var'          => true,
+		'query_var'          => false,
 		'rewrite'            => array( 'slug' => 'slide' ),
 		'capability_type'    => 'post',
-		'has_archive'        => true,
+		'has_archive'        => false,
 		'hierarchical'       => false,
 		'menu_position'      => 22,
 		'supports'           => array( 'title', 'thumbnail','editor'),

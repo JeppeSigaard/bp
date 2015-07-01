@@ -13,7 +13,7 @@ function smamo_add_gallery() {
 		'query_var'          => true,
 		'rewrite'            => array( 'slug' => 'galleri' ),
 		'capability_type'    => 'post',
-		'has_archive'        => true,
+		'has_archive'        => false,
 		'hierarchical'       => false,
 		'menu_position'      => 22,
 		'supports'           => array( 'title'),

@@ -1,4 +1,4 @@
-<?php /* Template name: galleri */ get_header(); ?>
+<?php /* template name: Galleri */ get_header(); ?>
 
 <?php while(have_posts()) : the_post(); ?>
 <article <?php post_class(); ?>>
