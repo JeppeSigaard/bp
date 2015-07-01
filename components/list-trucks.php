@@ -14,9 +14,7 @@ while ( $vogne->have_posts() ): $vogne->the_post();
     <?php if( has_post_thumbnail()) : ?>
     <p><?php the_post_thumbnail(); ?></p>
     <?php endif; ?>
-    <p>	
-       <?php the_content(); ?>
-    </p>
+    <?php the_content(); ?>
 </div> <!-- END: box-full -->
 
 <?php endwhile; wp_reset_postdata();?>
