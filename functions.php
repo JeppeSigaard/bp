@@ -1,5 +1,5 @@
 <?php 
-
+add_post_type_support( 'page', 'excerpt' );
 
 /* Scripts and styles */
 require 'functions/scripts.php'; 

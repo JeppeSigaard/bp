@@ -24,4 +24,4 @@ $defaults = array(
 wp_nav_menu( $defaults );
 
 ?>
-</div><!-- END: topnav -->
+</div>
